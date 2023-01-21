@@ -5,11 +5,18 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Roboto";
   font-size: 16px;
   color: #727272;
   line-height: 164%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 a {
@@ -39,6 +46,10 @@ h1, h2, h3, h4, h5, h6 {
 .clearfix {
   clear: both;
   color: blue;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .header {
@@ -107,6 +118,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .first {
   background-color: #EEEFF1;
+}
+
+.footer {
+  background-color: #34547A;
+  height: 50px;
+  flex: 0 0 auto;
+  padding: 50px 0;
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.footer__socials {
+  font-size: 21px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+.footer{
+    background-color: $color-primery;
+    height: 50px;
+    flex: 0 0 auto;
+    padding: 50px 0;
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    &__socials{
+        font-size: 21px;
+        
+    }
+
+}
